@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# cleanup on purge
+if [ "$1" = "purge" ]; then
+    rm -rf /etc/icingaweb2
+    rm -rf /var/log/icingaweb2
+fi
+
+#DEBHELPER#
