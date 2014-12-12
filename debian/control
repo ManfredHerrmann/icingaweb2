@@ -13,7 +13,8 @@ Vcs-Browser: https://git.icinga.org/?p=icingaweb2.git;a=summary
 Package: icingaweb2
 Architecture: all
 Depends:
- icingaweb2-common
+ icingaweb2-common,
+ ${misc:Depends}
 # icingaweb-vendor-parsedown,
 # icingaweb-vendor-lessphp,
 # icingaweb-vendor-jshrink,
@@ -26,7 +27,6 @@ Recommends:
  icingaweb2-module-monitoring,
  icingaweb2-module-doc,
  icingaweb2-module-setup
-Suggests: php5-ldap
 Description: simple and responsive web interface for Icinga
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
@@ -38,7 +38,8 @@ Description: simple and responsive web interface for Icinga
 Package: icingaweb2-common
 Architecture: all
 Depends:
- php-icinga
+ php-icinga,
+ ${misc:Depends}
 Description: simple and responsive web interface for Icinga - common files
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
@@ -51,7 +52,8 @@ Package: icingacli
 Architecture: all
 Depends:
  icingaweb2-common,
- php5-cli (>= 5.3.2)
+ php5-cli (>= 5.3.2),
+ ${misc:Depends}
 Description: CLI tool based on the Icingaweb2 framework
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
@@ -62,7 +64,7 @@ Description: CLI tool based on the Icingaweb2 framework
 
 Package: icingaweb2-module-monitoring
 Architecture: all
-Depends: icingaweb2-common
+Depends: icingaweb2-common, ${misc:Depends}
 Description: simple and responsive web interface for Icinga - monitoring module
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
@@ -72,8 +74,9 @@ Description: simple and responsive web interface for Icinga - monitoring module
  This module adds the Icinga monitoring frontend.
 
 Package: icingaweb2-module-doc
+Section: doc
 Architecture: all
-Depends: icingaweb2-common
+Depends: icingaweb2-common, ${misc:Depends}
 Description: simple and responsive web interface for Icinga - documentation module
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
@@ -84,8 +87,8 @@ Description: simple and responsive web interface for Icinga - documentation modu
 
 Package: icingaweb2-module-setup
 Architecture: all
-Depends: icingaweb2-common
-Description: simple and responsive web interface for Icinga - documentation module
+Depends: icingaweb2-common, ${misc:Depends}
+Description: simple and responsive web interface for Icinga - setup module
  Icingaweb2 is a very modular, fast and simple web interface for your Icinga
  monitoring environment.
  .
@@ -95,13 +98,13 @@ Description: simple and responsive web interface for Icinga - documentation modu
 
 #Package: icingaweb2-module-test
 #Architecture: all
-#Depends: icingacli
+#Depends: icingacli, ${misc:Depends}
 #Description: Icingaweb test module
 # Use this module to run unit tests against Icingaweb or any of it's modules
 
 #Package: icingaweb2-module-translation
 #Architecture: all
-#Depends: icingaweb2-common
+#Depends: icingaweb2-common, ${misc:Depends}
 #Description: Icingaweb translation module
 # This module helps translators to get Icingaweb translations done
 
@@ -110,12 +113,12 @@ Section: php
 Architecture: all
 Depends:
  php5 (>= 5.3.2),
- zendframework
+ zendframework,
+ ${misc:Depends}
 # | icingaweb-vendor-zend
 Recommends:
  php5-mysql | php5-mysqlnd | php5-pgsql,
  php5-json
-Suggests: php5-pgsql
 Description: PHP library to communicate with and use Icinga
  TODO: better description
  .
