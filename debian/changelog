@@ -1,5 +1,10 @@
-icingaweb (2.0.0) stable; urgency=low
+icingaweb2 (2.0.0~beta) UNRELEASED; urgency=low
 
-  * First stable release (Closes: #0001)
+  * Icingaweb 2 Debian packaging for snapshot builds
 
- -- Thomas Gelf <thomas@gelf.net>  Fri, 28 Mar 2014 23:37:31 +0100
+  *** Please note that this package is built from the development tree of
+  *** Icingaweb 2 - Use it with care, because it might be broken or include
+  *** incomplete features and other known issues.
+  *** Please see http://debmon.org and Debian for released package versions.
+
+ -- Markus Frosch <markus@lazyfrosch.de>  Fri, 12 Dec 2014 12:05:21 +0100
