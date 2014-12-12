@@ -1,0 +1,7 @@
+icingaweb2 Debian source TODO
+=============================
+
+* copyright
+* embedded jquery + addons: public/js/vendor
+* embedded font: application/fonts
+
