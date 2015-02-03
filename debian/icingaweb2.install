@@ -1,10 +1,10 @@
-public doc                       usr/share/icingaweb
+public doc                       usr/share/icingaweb2
 
-application/controllers          usr/share/icingaweb/application
-application/fonts                usr/share/icingaweb/application
-application/forms                usr/share/icingaweb/application
-application/layouts              usr/share/icingaweb/application
-application/views                usr/share/icingaweb/application
+application/controllers          usr/share/icingaweb2/application
+application/fonts                usr/share/icingaweb2/application
+application/forms                usr/share/icingaweb2/application
+application/layouts              usr/share/icingaweb2/application
+application/views                usr/share/icingaweb2/application
 
-packages/files/public/index.php  usr/share/icingaweb/public
+packages/files/public/index.php  usr/share/icingaweb2/public
 debian/icingaweb2.conf           etc/apache2/conf-available
