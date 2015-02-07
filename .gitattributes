@@ -3,6 +3,7 @@
 # Exclude Vagrant and Puppet related files when generating an archive
 .puppet* export-ignore
 Vagrantfile export-ignore
+debian/ export-ignore
 
 # Normalize puppet manifests' line endings to LF on checkin and prevent conversion to CRLF when the files are checked out
 .puppet* eol=lf

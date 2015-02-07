@@ -8,7 +8,4 @@
 # Exclude application log files
 var/log/*
 
-# Exclude symlink you need for packaging
-/debian
-
 build/*
